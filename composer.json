@@ -15,8 +15,9 @@
     ],
     "require": {
         "php": ">=5.3.0",
+        "calderawp/magic-tags": "dev-master",
+        "calderawp/fields": "dev-master",
         "xamin/handlebars.php": "dev-master",
-        "calderawp/wp-handlebars-helpers": "dev-master",
-        "calderawp/magic-tags": "dev-master"
+        "calderawp/wp-handlebars-helpers": "dev-master",        
     }
 }

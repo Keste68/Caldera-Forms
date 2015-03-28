@@ -34,7 +34,6 @@ require_once( CF_PATH . 'vendor/autoload.php' );
 
 // load internals
 require_once( CF_PATH . 'classes/class-caldera-forms.php' );
-require_once( CF_PATH . 'classes/class-fields.php' );
 require_once( CF_PATH . 'classes/class-options.php' );
 require_once( CF_PATH . 'classes/class-settings.php' );
 

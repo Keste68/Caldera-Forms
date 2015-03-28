@@ -3,11 +3,11 @@
 
 <?php
 // Element trigger for Button
-$fields = Caldera_Forms_Fields::get_fields();
+$fields = new \calderawp\input\fields();
 // setup all categories list
 $all_categories = array();
 
-foreach( $fields as $field_slug=>$field ){
+foreach( $fields->fields as $field_slug=>$field ){
 	// enqueue scripts
 	if( !empty( $field['setup']['scripts'] ) ){
 		foreach( $field['setup']['scripts'] as $script ){
@@ -15,7 +15,7 @@ foreach( $fields as $field_slug=>$field ){
 		}
 	}
 	// setup categories
-	$catagories = 'Other';	
+	$categories = array( 'Other' );	
 	if( !empty( $field['category'] ) ){
 		$categories = array_map('trim', explode( ',', $field['category'] ) );
 	}
@@ -141,7 +141,7 @@ foreach( $fields as $field_slug=>$field ){
 				
 					<?php
 						// Element template for Fields
-						foreach( $fields as $field_slug=>$field ){
+						foreach( $fields->fields as $field_slug=>$field ){
 					?>
 					{{#if _<?php echo $field_slug; ?>}}
 
@@ -180,7 +180,7 @@ foreach( $fields as $field_slug=>$field ){
 
 <?php
 	// Element modal template for Fields
-	foreach( $fields as $field_slug=>$field ){
+	foreach( $fields->fields as $field_slug=>$field ){
 ?>
 {{#script type="text/html" id="field-config-template-<?php echo $field_slug; ?>"}}
 	
@@ -217,7 +217,7 @@ foreach( $fields as $field_slug=>$field ){
 
 <?php
 	// Element template for Fields
-	foreach( $fields as $field_slug=>$field ){
+	foreach( $fields->fields as $field_slug=>$field ){
 ?>
 {{#script type="text/html" id="layout_<?php echo $field_slug;?>_item"}}
 
