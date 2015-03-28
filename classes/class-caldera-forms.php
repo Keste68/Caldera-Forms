@@ -60,7 +60,7 @@ class Caldera_Forms {
 
 		// Load admin style sheet and JavaScript.
 		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_admin_stylescripts' ) );
-
+		
 		// queue up the shortcode inserter
 		add_action( 'media_buttons', array($this, 'shortcode_insert_button' ), 11 );
 
@@ -218,7 +218,6 @@ class Caldera_Forms {
 		$output = null;
 
 		// do stuf and output
-		var_dump( $caldera_forms );
 
 		return $output;
 
