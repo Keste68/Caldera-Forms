@@ -1,15 +1,22 @@
 {
-    "name" : "Desertsnowman/caldera-forms",
-    "description" : "Create complex grid based, responsive forms easily with an easy to use drag and drop layout builder",
-    "type" : "wordpress-plugin",
-    "keywords" : [ "wordpress", "forms", "caldera" ],
-    "license" : "GPL-2.0+",
-    "authors" : [
+    "name": "caldera-forms/caldera-forms",
+    "description": "Simple to use Form Builder for WordPress",
+    "type": "wordpress-plugin",
+    "keywords": [
+        "wordpress"
+    ],
+    "license": "GPL-2.0+",
+    "authors": [
         {
-            "name"    : "David Cramer",
-            "homepage": "http://cramer.co.za",
-            "role" : "Lead Developer"
+            "name": "David Cramer",
+            "homepage": "https://calderawp.com",
+            "role": "Developer"
         }
     ],
-    "homepage" : "http://calderaforms.com"
+    "require": {
+        "php": ">=5.3.0",
+        "xamin/handlebars.php": "dev-master",
+        "calderawp/wp-handlebars-helpers": "dev-master",
+        "calderawp/magic-tags": "dev-master"
+    }
 }

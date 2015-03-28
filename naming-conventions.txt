@@ -1,0 +1,6 @@
+Plugin Name -- Caldera Forms
+Text domain -- caldera-forms
+Function prefix -- cf
+Class prefix -- {{Core_Prefix}}
+Root namespace -- Caldera_Forms
+Hook Prefix -- cf
